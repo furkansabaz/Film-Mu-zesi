@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="125-Fb-Iio">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,12 +17,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-oP-LOL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="psa-yD-RHa">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="psa-yD-RHa" id="QFv-cV-I5p">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kategoriAksiyon" translatesAutoresizingMaskIntoConstraints="NO" id="sb5-Hd-0Il">
+                                                    <rect key="frame" x="8" y="0.0" width="398" height="191.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AKSİYON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3L-50-0iQ">
+                                                    <rect key="frame" x="20" y="64" width="374" height="72"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="55"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="s3L-50-0iQ" firstAttribute="leading" secondItem="QFv-cV-I5p" secondAttribute="leading" constant="20" id="DYr-c9-yhd"/>
+                                                <constraint firstItem="s3L-50-0iQ" firstAttribute="centerY" secondItem="QFv-cV-I5p" secondAttribute="centerY" id="GjM-OV-I4P"/>
+                                                <constraint firstAttribute="bottom" secondItem="sb5-Hd-0Il" secondAttribute="bottom" constant="8" id="hpe-zo-VKP"/>
+                                                <constraint firstItem="sb5-Hd-0Il" firstAttribute="top" secondItem="QFv-cV-I5p" secondAttribute="top" id="r6z-B5-DoX"/>
+                                                <constraint firstItem="sb5-Hd-0Il" firstAttribute="leading" secondItem="QFv-cV-I5p" secondAttribute="leading" constant="8" id="uRC-Kb-0Qm"/>
+                                                <constraint firstAttribute="trailing" secondItem="sb5-Hd-0Il" secondAttribute="trailing" constant="8" id="wZ5-v2-XzO"/>
+                                                <constraint firstAttribute="trailing" secondItem="s3L-50-0iQ" secondAttribute="trailing" constant="20" id="z5z-ME-0gk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QXc-oP-LOL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8Ta-MB-cB0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QXc-oP-LOL" secondAttribute="bottom" id="B9q-JQ-kpj"/>
+                            <constraint firstItem="QXc-oP-LOL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cuk-rA-r1R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QXc-oP-LOL" secondAttribute="trailing" id="vV4-gc-x0D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yiv-T4-ESd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1255.072463768116" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A9S-6y-k3k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="125-Fb-Iio" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m8X-rn-4ld">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8mj-zu-8hQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSh-OW-3Cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.92753623188406" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kategoriAksiyon" width="1280" height="720"/>
+    </resources>
 </document>

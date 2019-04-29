@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="psa-yD-RHa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kategoricell" rowHeight="200" id="psa-yD-RHa" customClass="KategoriCell" customModule="Film_Mu_zesi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="psa-yD-RHa" id="QFv-cV-I5p">
@@ -49,6 +49,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="s3L-50-0iQ" secondAttribute="trailing" constant="20" id="z5z-ME-0gk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgKategori" destination="sb5-Hd-0Il" id="MNu-n2-hOa"/>
+                                            <outlet property="lblKategoriAdi" destination="s3L-50-0iQ" id="vs4-Q9-LZh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -63,6 +67,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yiv-T4-ESd"/>
+                    <connections>
+                        <outlet property="tableView" destination="QXc-oP-LOL" id="TJQ-h3-saL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

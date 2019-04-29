@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D62D6FA227776FC00CB2A62 /* KategoriCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62D6F9227776FC00CB2A62 /* KategoriCell.swift */; };
 		3DAFFC0822771C57007B246A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFFC0722771C57007B246A /* AppDelegate.swift */; };
 		3DAFFC0A22771C57007B246A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFFC0922771C57007B246A /* ViewController.swift */; };
 		3DAFFC0D22771C57007B246A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAFFC0B22771C57007B246A /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D62D6F9227776FC00CB2A62 /* KategoriCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriCell.swift; sourceTree = "<group>"; };
 		3DAFFC0422771C57007B246A /* Film Müzesi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Film Müzesi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAFFC0722771C57007B246A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DAFFC0922771C57007B246A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		3DAFFC1A22771D88007B246A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D62D6F9227776FC00CB2A62 /* KategoriCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				3DAFFC0A22771C57007B246A /* ViewController.swift in Sources */,
 				3DAFFC1F22771DD4007B246A /* Film.swift in Sources */,
 				3DAFFC1D22771DB7007B246A /* FilmKategori.swift in Sources */,
+				3D62D6FA227776FC00CB2A62 /* KategoriCell.swift in Sources */,
 				3DAFFC2122771DF4007B246A /* VeriSeti.swift in Sources */,
 				3DAFFC0822771C57007B246A /* AppDelegate.swift in Sources */,
 			);
